@@ -59,7 +59,7 @@ RUN if [ -n "$PIPELINES_URLS" ] || [ -n "$PIPELINES_REQUIREMENTS_PATH" ]; then \
 
 # Expose the port
 ENV HOST="0.0.0.0"
-ENV PORT="9099"
+ENV PORT="8080"
 
 # if we already installed the requirements on build, we can skip this step on run
 ENTRYPOINT [ "bash", "start.sh" ]
